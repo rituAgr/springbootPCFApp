@@ -1,0 +1,6 @@
+services:
+- springbootPCFApi-Mysql
+
+applications:
+- name: springbootPCFApp
+  path: build/libs/springbootPCFApp-0.0.1-SNAPSHOT.jar
