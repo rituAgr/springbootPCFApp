@@ -28,7 +28,7 @@ This is simple springboot app. It run on local with embedded H2 database as well
 2. Create mysql service tile with name ```springbootPCFApi-Mysql```
 3. Make sure PCF login is successfully done with specified space
 4. Refer manifest.yml file for reference.
-5. Just do ```cf push```gi
+5. Just do ```cf push```
  
 
  
