@@ -14,12 +14,13 @@ This is simple springboot app. It run on local with embedded H2 database as well
 4. Check that  the dependency for h2 in build.gradle is commented
 5. Also, Uncomment out the sql connector dependency in build.gradle
 
-
+_``**__````____**``_
 ###For PCF deployment via command line
 1. Create jar ```gradle clean build```
 2. Create mysql service tile with name ```springbootPCFApi-Mysql```
 3. Make sure PCF login is successfully done with specified space
 4. Bind that mysql service tile to app by ```cf bind-service springbootPCFApp springbootPCFApi-Mysql```
+5. Set all the properties which are mentioned by appication.properties to appication-cloud.properties by vacap-service values  
 5. Then push and start app in PCF by ```cf push springbootPCFApp -p build/libs/springbootPCFApp-0.0.1-SNAPSHOT.jar```
 
 
@@ -28,7 +29,7 @@ This is simple springboot app. It run on local with embedded H2 database as well
 2. Create mysql service tile with name ```springbootPCFApi-Mysql```
 3. Make sure PCF login is successfully done with specified space
 4. Refer manifest.yml file for reference.
-5. Just do ```cf push```gi
+5. Just do ```cf push```
  
 
  
