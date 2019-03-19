@@ -29,7 +29,19 @@ _``**__````____**``_
 2. Create mysql service tile with name ```springbootPCFApi-Mysql```
 3. Make sure PCF login is successfully done with specified space
 4. Refer manifest.yml file for reference.
-5. Just do ```cf push```
+5. Just do ```cf push``
+
+
+##Sample for https Scratch file for making Request`
+POST https://springbootpcfapp.cfaa.hcsctest.net/prof
+Content-Type: application/json
+
+{
+"id" : "id123",
+"name" : "Peter"
+}
+
+GET https://springbootpcfapp.cfaa.hcsctest.net/prof/id123
  
 
  
